@@ -1,0 +1,15 @@
+{
+  "environment": "production",
+  "app": {
+    "baseUrl": "http://www.betteroffkirklees.org.uk",
+    "pdfBaseUrl":"http://www.betteroffkirklees.org.uk/modules/forms/scripts/services/forms"
+  },
+  "api": {
+    "baseUrl": "http://api.betteroffkirklees.org.uk/api/v1"
+  },
+  "auth": {
+    "baseUrl": "http://api.betteroffkirklees.org.uk",
+    "formLoginIsEnabled": true
+  }
+}
+ 
