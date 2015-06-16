@@ -15,81 +15,30 @@
 
   <body layout="row">
 
-
-    <md-sidenav
-      class="site-sidenav md-sidenav-left md-whiteframe-z2 md-closed ng-isolate-scope md-locked-open"
-      md-component-id="left"
-      tabindex="-1"
-      aria-hidden="false">
-
-      <header class="nav-header">
-        <a ui-sref="main" class="page-logo">
-          <img src="images/lila.io.logo.svg" alt="">
-        </a>
-      </header>
-
-      <md-content flex role="navigation">
-        <ul class="menu">
-          <li class="parent-list-item">
-            <h2 class="menu-heading md-subhead">
-              Account
-            </h2>
-          </li>
-          <li>
-            <md-button ui-sref="main">
-              Log in
-            </md-button>
-          </li>
-          <li>
-            <md-button ui-sref="main">
-              Create account
-            </md-button>
-          </li>
-        </ul>
-        <ul class="menu">
-          <li class="parent-list-item">
-            <h2 class="menu-heading md-subhead">
-              Account
-            </h2>
-          </li>
-          <li>
-            <md-button ui-sref="main">
-              Log in
-            </md-button>
-          </li>
-          <li>
-            <md-button ui-sref="main">
-              Create account
-            </md-button>
-          </li>
-        </ul>
-      </md-content>
-    </md-sidenav>
-
     <div layout="column" tabIndex="-1" role="main" flex>
 
       <md-toolbar>
         <div class="md-toolbar-tools">
-          <h2>
-            <span>Lila</span>
-          </h2>
-          <md-button class="md-button">
+          <a ui-sref="main" class="header-logo">
+            <img src="images/lila.io.logo.white.svg" alt="Lila logo white" title="Lila">
+          </a>
+          <md-button class="md-button" ui-sref="devices">
             Devices
           </md-button>
-          <md-button class="md-button">
+          <md-button class="md-button" ui-sref="data">
             Data
           </md-button>
           <span flex></span>
-          <md-button class="md-button">
+          <md-button class="md-button" ui-sref="help">
             Help
           </md-button>
-          <md-button class="md-button">
+          <md-button class="md-button" ui-sref="account">
             Account
           </md-button>
         </div>
       </md-toolbar>
 
-      <md-content md-scroll-y flex layout-padding ui-view="body"></md-content>
+      <md-content md-scroll-y flex ui-view="body"></md-content>
 
     </div>
 
@@ -109,6 +58,10 @@
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/app.js"></script>
+    <script src="scripts/modules/devices/index.js"></script>
+    <script src="scripts/modules/data/index.js"></script>
+    <script src="scripts/modules/help/index.js"></script>
+    <script src="scripts/modules/account/index.js"></script>
     <!-- endbuild -->
   </body>
 </html>

@@ -30,11 +30,11 @@ angular
 			.state('main', {
 				url: '/',
         views: {
-          header: {
-            template: 'header'
-          },
           body: {
-            template: '<h1>Home page</h1>'
+            template: '' +
+            '<md-content flex class="landing">' +
+            ' <h1>Landing page</h1>' +
+            '</md-content>'
           }
         }
 			});

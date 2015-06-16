@@ -1,0 +1,14 @@
+<md-content>
+  <md-list>
+
+    <md-subheader class="md-no-sticky">Registered Devices</md-subheader>
+    <md-list-item class="md-3-line" ng-repeat="item in ctrl.devices">
+      <img ng-src="{{item.imageUrl}}" class="md-avatar" alt="{{item.title}}" />
+      <div class="md-list-item-text">
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.description }}</p>
+      </div>
+    </md-list-item>
+
+  </md-list>
+</md-content>
