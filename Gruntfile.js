@@ -45,7 +45,7 @@ module.exports = function (grunt) {
         files: ['Gruntfile.js']
       },
       templates: {
-        files: ['<%= yeoman.app %>/views/{,**/}*.html'],
+        files: ['<%= yeoman.app %>/*/{,**/}*.html'],
         tasks: ['ngtemplates']
       },
       livereload: {
