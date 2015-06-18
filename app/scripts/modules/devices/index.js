@@ -50,7 +50,7 @@ angular
                 id: 5,
                 title: 'Copter',
                 description: 'Fancy quadcopter'
-              },
+              }
             ];
           }]
         })
@@ -59,13 +59,13 @@ angular
           url: '/show/:id',
           templateUrl: 'scripts/modules/devices/templates/show.html',
           controllerAs: 'ctrl',
-          controller: function(){
+          controller: ['$state', function($state){
             this.device = {
               id: 1,
               title: 'Nexus 5',
               description: 'home device'
             };
-          }
+          }]
         })
 
         .state('devices.create', {
